@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from "@angular/common/http";
+import {ChipComponentModule} from "./components/chip/chip.component-module";
+import {ChipFormComponentModule} from "./components/chip-form/chip-form.component-module";
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HttpClientModule } from "@angular/common/http";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ChipComponentModule,
+    ChipFormComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
